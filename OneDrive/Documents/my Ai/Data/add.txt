@@ -1,0 +1,4 @@
+add
+remove all firebase connectivity
+Backend (Node.js with Express.js) → Handles API requests
+Database (SQL - MySQL, PostgreSQL, or SQLite) → Stores data

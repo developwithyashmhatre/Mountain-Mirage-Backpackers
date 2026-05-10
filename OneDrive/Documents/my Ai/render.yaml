@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: python-ai-assistant
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DISABLE_AUTOMATION
+        value: "1"
+      - key: PYTHONUNBUFFERED
+        value: "1"
+

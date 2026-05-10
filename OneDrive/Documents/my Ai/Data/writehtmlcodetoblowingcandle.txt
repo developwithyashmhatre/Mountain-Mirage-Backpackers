@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Blowing Candle</title>
+ <style>
+ body {
+ background-color: #f0f0f0;
+ }
+ .candle {
+ width: 200px;
+ height: 300px;
+ background-color: #ffffcc;
+ border-radius: 50% 50% 50% 50% / 50% 50% 0% 0%;
+ box-shadow: 0px 0px 5px #888888;
+ position: relative;
+ }
+ .flame {
+ width: 0;
+ height: 0;
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-top: 20px solid #ffcc00;
+ border-radius: 50% 50% 0% 0% / 50% 50% 0% 0%;
+ position: absolute;
+ top: -18px;
+ left: 95px;
+ animation: flame 2s infinite;
+ }
+ @keyframes flame {
+ 0% {
+ transform: rotate(0deg);
+ }
+ 100% {
+ transform: rotate(360deg);
+ }
+ }
+ .smoke {
+ width: 10px;
+ height: 100px;
+ background-color: #cccccc;
+ border-radius: 50% 50% 0% 0% / 50% 50% 0% 0%;
+ position: absolute;
+ top: -50px;
+ left: 95px;
+ animation: smoke 2s infinite;
+ }
+ @keyframes smoke {
+ 0% {
+ opacity: 1;
+ }
+ 50% {
+ opacity: 0.5;
+ }
+ 100% {
+ opacity: 1;
+ }
+ }
+ .blow {
+ width: 50px;
+ height: 50px;
+ background-color: #ffffff;
+ border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+ position: absolute;
+ top: 250px;
+ left: 95px;
+ box-shadow: 0px 0px 10px #888888;
+ animation: blow 1s forwards;
+ }
+ @keyframes blow {
+ 0% {
+ transform: rotate(0deg);
+ }
+ 100% {
+ transform: rotate(360deg);
+ }
+ }
+ </style>
+</head>
+<body>
+ <div class="candle">
+ <div class="flame"></div>
+ <div class="smoke"></div>
+ </div>
+ <div class="blow"></div>
+</body>
+</html>

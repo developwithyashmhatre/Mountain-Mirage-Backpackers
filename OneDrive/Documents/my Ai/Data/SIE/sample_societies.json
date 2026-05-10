@@ -1,0 +1,41 @@
+[
+  {
+    "society": "Crown Society",
+    "aliases": ["Crown CHS", "Crown Housing"],
+    "wing": "A",
+    "wing_name": "A Wing",
+    "flat": "A-101",
+    "owner": "Vijay Kumar",
+    "owner_phone": "9800000001",
+    "bill_month": "2026-03",
+    "amount_due": 8500,
+    "amount_paid": 0,
+    "status": "pending",
+    "due_date": "2026-04-10"
+  },
+  {
+    "society": "Crown Society",
+    "wing": "A",
+    "flat": "A-102",
+    "owner": "Meera Shah",
+    "bill_month": "2026-03",
+    "amount_due": 8500,
+    "amount_paid": 8500,
+    "status": "paid",
+    "payment_amount": 8500,
+    "paid_at": "2026-03-28",
+    "payment_method": "UPI",
+    "utr": "UTR123456789"
+  },
+  {
+    "society": "Pices Society",
+    "aliases": ["Pices CHS"],
+    "wing": "D",
+    "flat": "D-101",
+    "tenant": "Rahul Singh",
+    "bill_month": "2026-03",
+    "amount_due": 6200,
+    "amount_paid": 2000,
+    "status": "pending"
+  }
+]

@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+
+# Virtual environments
+myenv/
+venv/
+.venv/
+env/
+
+# Local env + secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.vscode/
+.idea/
+*.log
+
+# Playwright
+ms-playwright/
+
+# Local data/cache
+Data/*.json
+Backend/**/cache*.json
+Backend/**/.cache/
+
